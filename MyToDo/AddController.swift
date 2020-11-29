@@ -42,7 +42,7 @@ class AddController: UIViewController {
         
         
     }
-// スクロールしない
+
     
 
         
