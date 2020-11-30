@@ -17,6 +17,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     //UITableView、numberOfRowsInSectionの追加(表示するcell数を決める)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        
+        
         //戻り値の設定(表示するcell数)
         return todoList.count
         
@@ -34,6 +37,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             //変数を作る
             let TodoCell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TodoCell", for: indexPath)
+            //複数行でも入力可能
+            TodoCell.textLabel?.numberOfLines=0
             //変数の中身を作る
             TodoCell.textLabel!.text = todoList[indexPath.row]
             //戻り値の設定（表示する中身)
