@@ -23,7 +23,6 @@ class AddController: UIViewController {
     //テキストフィールドの設定
     @IBOutlet weak var TextField: UITextField!
     
-   
     
     //追加ボタンの設定
 
@@ -37,6 +36,8 @@ class AddController: UIViewController {
         //変数の中身をUDに追加
         UserDefaults.standard.set( todoList, forKey: "TodoList" )
         
+        
+        
     
         
         
@@ -48,6 +49,9 @@ class AddController: UIViewController {
         
         func textViewDidChange(_ textView: UITextView) {
                 //新しいテキスト
+            
+            
+            
        
             
             
